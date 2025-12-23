@@ -54,6 +54,8 @@ The dataset included in this repository is **synthetic** and created solely for 
 *   Power BI
 *   Excel
 
-
+*** 
+## Link 
+https://app.powerbi.com/groups/me/reports/febcf43c-5ec0-4d94-899c-0d2f3e88754a/f5d8e4ea0eafb2e62ab4?experience=power-bi
 
 
