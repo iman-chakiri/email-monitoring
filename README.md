@@ -1,73 +1,110 @@
 # Sell-out Email Monitoring
 
-This project provides a **Power BI dashboard** designed to monitor sell-out data collection through email interactions.  
-It transforms unstructured email exchanges into structured indicators that support process understanding and operational control.
+This project shows how **email-based sell-out data collection** can be monitored and measured using **Power BI**.
 
-***
+The dashboard turns daily email activity (data sent, reminders, follow-ups) into **clear indicators** that help understand:
+- who sends data regularly  
+- who requires frequent follow-ups  
+- how complex the communication process is  
 
-## Project Scope
+The goal is **operational visibility**, not advanced analytics.
 
-*   Monitoring email-based data collection
-*   Measuring data delivery reliability
-*   Quantifying follow-up effort
-*   Providing visibility on communication complexity
+---
 
-***
+## What problem does this solve?
 
-## Key Indicators
+In many companies, sell-out data is collected **via email**.
+This creates issues:
+- data arrives late or inconsistently  
+- many follow-ups are needed  
+- email threads become complex and hard to track  
 
-*   **Reliability** – consistency of data delivery relative to follow-up effort
-*   **Files Received** – emails containing sell-out data
-*   **Follow-ups Sent** – reminders sent
-*   **Total Conversations** – overall interaction volume
+This dashboard makes the process **measurable and visible**.
 
-Reliability is classified into **High**, **Medium**, and **Low** states.
+---
 
-***
-### Project Structure
+## What the dashboard shows
 
-**Data Model**  
-The report is built on a single table (`Email`), intentionally kept flat to reflect the event-based nature of email communications.  
-The model is designed for operational monitoring rather than relational analysis.
+For each account / contact, the report tracks:
 
-**Measures Architecture**  
-All business logic is implemented through DAX measures, structured in layers:
-- Base measures capturing follow-up activity and received files  
-- Role-specific measures focusing on operational senders  
-- A synthesized KPI measuring data delivery reliability relative to follow-up effort  
+- **Files Received**  
+  Emails that actually contain sell-out data
 
-This approach keeps the data model simple while embedding business rules directly in the metric layer.
+- **Follow-ups Sent**  
+  Reminder emails sent to request missing data
 
-**Report Design Logic**  
-The dashboard consists of a single page, designed as a monitoring view rather than an exploratory report.  
-The layout prioritizes clarity, fast readability, and immediate interpretation of operational status.
+- **Total Conversations**  
+  Overall number of email interactions
 
+- **Reliability**  
+  A simple KPI that combines:
+  - data received  
+  - effort required to obtain it  
 
-***
+Reliability is classified as:
+- **High**
+- **Medium**
+- **Low**
+
+This allows quick identification of:
+- reliable data providers  
+- accounts that require constant follow-up  
+
+---
+
+## How the dashboard is designed
+
+### Data Model
+- Single flat table (`Email`)
+- Each row represents an email-related event  
+- Designed for **monitoring**, not complex relational analysis  
+
+### Business Logic
+- All logic is implemented using **DAX measures**
+- KPIs are calculated directly in the reporting layer  
+
+### Report Layout
+- One-page dashboard
+- Built for **quick reading**
+- Focused on operational status, not exploration  
+
+---
 
 ## Screenshots
 
-The repository includes three screenshots illustrating:
+The repository includes screenshots showing:
+- High reliability examples  
+- Medium reliability examples  
+- Low reliability examples  
 
-*   High reliability scenarios
-*   Medium reliability scenarios
-*   Low reliability scenarios
+These help understand how the KPI behaves in different scenarios.
 
-***
+---
 
 ## Dataset
 
-The dataset included in this repository is **synthetic** and created solely for demonstration purposes.
+The dataset included in this repository is **fully synthetic**.  
+No real company names, emails are used.
 
-***
+---
 
-## Tools
+## Tools Used
 
-*   Power BI
-*   Excel
+- Power BI  
+- Excel  
+
+---
+
+## Notes
+
+This project focuses on:
+- process monitoring  
+- communication efficiency  
+- data collection reliability  
+
+It is designed as an **operational control tool**.
 
 *** 
 ## Link 
 https://app.powerbi.com/groups/me/reports/febcf43c-5ec0-4d94-899c-0d2f3e88754a/f5d8e4ea0eafb2e62ab4?experience=power-bi
-
 
