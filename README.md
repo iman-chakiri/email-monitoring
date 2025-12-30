@@ -67,10 +67,10 @@ This allows quick identification of:
 
 ## Screenshots
 
-The repository includes screenshots showing:
-- High reliability examples  
-- Medium reliability examples  
-- Low reliability examples  
+The repository includes example scenarios:
+- [High reliability](screenshots/reliability_high.png)
+- [Medium reliability](screenshots/reliability_medium.png)
+- [Low reliability](screenshots/reliability_low.png)
 
 These help understand how the KPI behaves in different scenarios.
 
